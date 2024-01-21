@@ -17,12 +17,41 @@ align-items: center;
 
 .main {
 
-
 }
 
 
 /*Footer*/
 .footer {
+    background-color: rgb(29, 29, 72);
+    color: white;
+}
 
+.author-desc {
 
 }
+
+.hr {
+
+}
+
+.footer-items {
+display: flex;
+justify-content: space-evenly;
+}
+
+.about-us {
+
+}
+
+.flickr-photos {
+
+}
+
+.recent-tweets {
+
+}
+
+.newsletter {
+
+}
+
