@@ -1,8 +1,12 @@
+/* font-family: 'Open Sans', sans-serif; */
+/* font-family: 'Ubuntu', sans-serif; */
+
 /*Header*/
 .header {
 display: flex; 
 justify-content: space-evenly;
 align-items: center;
+font-family: 'Ubuntu', sans-serif;
 }
 
 .title-container {
