@@ -122,7 +122,7 @@ align-items: center;
     display: flex;
     justify-content: space-evenly;
     font-family: 'Ubuntu', sans-serif;
-
+    flex-direction: column;
 }
 
 
@@ -140,13 +140,12 @@ align-items: center;
 .sm-pics {
     display:flex;
     height: 40px;
-    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .description {
     display: flex;
     flex-direction: row;
-    align-items: flex-start;
 }
 
 .pfp {
@@ -157,7 +156,7 @@ align-items: center;
 .p-description {
     display: flex;
     flex-direction: column;
-    
+    justify-content: flex-start;
     font-size: 12px;
     font-weight: lighter;
 }
