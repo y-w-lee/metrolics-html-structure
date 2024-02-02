@@ -96,79 +96,121 @@ align-items: center;
     justify-content: space-evenly;
 }
 
-/*Footer*/
+/* FOOTER */
 
+
+/* footer adjustments */
 .footer {
     background-color: #16242f;
     color: white;
     padding: 10px;
-    padding-left: 300px;
-    padding-right: 300px;
+    padding-left: 250px;
+    padding-right: 250px;
 }
 
-.h2-footer {
-    font-size: 15px;
+.footer-items {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h2 {
+    font-size: 14px;
     margin-top: 0px;
     white-space: nowrap; 
     text-overflow: ellipsis;
 }
 
-.p-footer {
+p {
     font-size: 12px;
     font-weight: lighter;
 }
 
-.footer-items {
-    display: flex;
-    justify-content: space-evenly;
-    font-family: 'Ubuntu', sans-serif;
-    flex-direction: column;
-}
-
-
-.minions {
-    display: grid;
-    grid-template-columns: 3fr, 2fr;
-    height: 50px;
-    margin: 3px;
-}
-
-.twitter-logo {
-    height: 30px;
-}
-
-.sm-pics {
-    display:flex;
-    height: 40px;
-    align-items: flex-end;
-}
+/* Peewee Herman descripnm adjustments */
 
 .description {
     display: flex;
     flex-direction: row;
 }
 
-.pfp {
-    height: 60px;
-    margin-right: 10px;
+.description h2{
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
 }
 
-.p-description {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
+.description p{
     font-size: 12px;
     font-weight: lighter;
+    font-style: italic;
+    margin-top: 0px;
 }
 
-.email {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  margin-bottom: 10px; 
-  
+.text-description {
+    margin-left: 15px;
 }
+
+.pfp {
+    height: 60px;
+}
+
+/* Description Row Adjustments */
+
+.desc-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.desc-row p{
+    font-size: 10px;
+}
+
+/* About us adjustments*/
+
+.about-us {
+    width: 550px;
+}
+
+.sm-pics {
+    height: 25px;
+    align-items: flex-end;
+}
+
+/* flickr photos adjustments */
+
+.flickr-photos {
+    width: 550px;
+}
+
+.minions {
+    height: 50px;
+    margin: 1px;
+}
+
+/* recent tweets adjustments */
+
+.recent-tweets {
+    width: 550px;
+}
+
+.twitter-logo {
+    height: 30px;
+}
+
+/* Newsletter adjustments */
+
+.newsletter {
+    width: 550px;
+}
+
+
+
 
 /* MEDIA QUERIES */
 
