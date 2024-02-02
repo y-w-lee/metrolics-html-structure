@@ -85,10 +85,11 @@ span {
     font-weight: 300;
     font-size: 1rem;
 }
-.four-cards-container img {
-    width: 7rem;
-    height: 7rem;
+.card .widget {
+    width: 5rem;
+    height: 5rem;
 }
+
 .four-cards-container .card {
     width: 30%;
 }
@@ -98,17 +99,24 @@ span {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    margin: 1rem;
 }
 .banner-title {
     display: block;
     margin-bottom: 0%;
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 500;
+    font-size: 1rem;
 }
 /* h3, Used several times*/
 
 .banner-subtitle {
     display: block;
     color: grey;
-    margin-top: 0.5rem;
+    margin: 0.5rem;
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 500;
+    font-size: 1rem;
 }
 /* h6, Used several times*/
 
@@ -118,6 +126,11 @@ span {
     gap: 0.5rem;
     align-items: center;
     width: 60%;
+}
+
+.card-container img {
+    width: 15rem;
+    height: 13rem;
 }
 
 .card-container .card-text {
