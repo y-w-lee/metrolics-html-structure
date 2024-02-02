@@ -91,13 +91,22 @@ align-items: center;
 
 } */
 
+
+
+/* CLIENTS */
+
 .client-board {
     display: flex;
     justify-content: space-evenly;
+    gap: 20px;
+    padding-bottom: 60px;
+}
+
+.img-client {
+    width: 170px;
 }
 
 /* FOOTER */
-
 
 /* footer adjustments */
 .footer {
@@ -201,6 +210,26 @@ p {
 
 .twitter-logo {
     height: 30px;
+}
+
+.tweet-1 {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.tweet-1 p {
+    margin-top: 0px;
+}
+
+.tweet-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.tweet-2 p {
+    margin-top: 0px;
 }
 
 /* Newsletter adjustments */
