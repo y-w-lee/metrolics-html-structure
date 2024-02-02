@@ -55,15 +55,25 @@ align-items: center;
 }
 
 .carousel-container {
-  
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  background-color: rgb(213, 213, 213);
+}
+.carousel-container img {
+    width: 70%;
 }
 
 .intro-text-container {
     text-align: center;
     font-family: 'Ubuntu', sans-serif; 
-    font-weight: 300;
+    font-weight: 0;
     font-size: 1rem;
     width: 70%;
+    padding: 2rem;
+}
+span {
+    color: rgb(0, 195, 255);
 }
 
 .four-cards-container {
@@ -75,6 +85,13 @@ align-items: center;
     font-weight: 300;
     font-size: 1rem;
 }
+.four-cards-container img {
+    width: 7rem;
+    height: 7rem;
+}
+.four-cards-container .card {
+    width: 30%;
+}
 
 .banner-text {
     display: flex;
@@ -84,21 +101,29 @@ align-items: center;
 }
 .banner-title {
     display: block;
+    margin-bottom: 0%;
 }
 /* h3, Used several times*/
 
 .banner-subtitle {
     display: block;
     color: grey;
+    margin-top: 0.5rem;
 }
 /* h6, Used several times*/
 
 .card-container {
     display: flex;
-    justify-content: space-between;
-    gap: 5px;
+    justify-content: space-around;
+    gap: 0.5rem;
     align-items: center;
-    /* width: 80%; */
+    width: 60%;
+}
+
+.card-container .card-text {
+    color: grey;
+    font-weight: 300;
+    font-size: 0.5rem;
 }
 
 .six-cards {
@@ -119,12 +144,14 @@ align-items: center;
 }
 
 
-/* .card-title {
-
+.card-title {
+    margin-top: 1rem;
+    margin-bottom: 0%;
 }
+
 .card-text {
 
-} */
+} 
 
 .client-board {
     display: flex;
