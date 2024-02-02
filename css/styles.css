@@ -139,6 +139,18 @@ span {
     font-size: 0.5rem;
 }
 
+.whats-up-lately-section {
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    align-content: center;
+    background-image: linear-gradient(90deg, rgb(0, 195, 255), rgb(0, 195, 255) 25%, grey 25%);
+    background-size: 100% 0.2rem;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+
 .six-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
