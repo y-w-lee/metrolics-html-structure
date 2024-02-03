@@ -58,42 +58,22 @@ align-items: center;
 }
 /* h6, Used several times*/
 
-.card-container {
-    display: flex;
-    justify-content: space-between;
-    gap: 5px;
-    align-items: center;
-    /* width: 80%; */
+
+
+/* Our Latest Projects Adjustments */
+
+.blue-img {
+    width: 302px;
 }
 
 .six-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-}
-
-.two-cards {
-  align-items: center;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
-}
-
-
-/* .card-title {
+    gap: 15px;
 
 }
-.card-text {
 
-} */
-
-
-
-/* CLIENTS */
+/* Clients Adjustment */
 
 .client-board {
     display: flex;
@@ -137,7 +117,7 @@ p {
     font-weight: lighter;
 }
 
-/* Peewee Herman descripnm adjustments */
+/* Peewee Herman description adjustments */
 
 .description {
     display: flex;
@@ -197,9 +177,15 @@ p {
     width: 550px;
 }
 
-.minions {
+.minions-pic {
     height: 50px;
     margin: 1px;
+}
+
+.minions {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
 }
 
 /* recent tweets adjustments */
