@@ -113,8 +113,7 @@ align-items: center;
     background-color: #16242f;
     color: white;
     padding: 10px;
-    padding-left: 250px;
-    padding-right: 250px;
+    padding: 2% 18%;
 }
 
 .footer-items {
@@ -197,11 +196,16 @@ p {
     width: 550px;
 }
 
+.minions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
 .minions {
     height: 50px;
     margin: 1px;
 }
-
 /* recent tweets adjustments */
 
 .recent-tweets {
