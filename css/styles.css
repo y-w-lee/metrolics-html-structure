@@ -73,6 +73,13 @@ align-items: center;
 
 }
 
+/* Things of above adjustments */
+
+.banner-text img {
+    width: 940px;
+    padding-bottom: 40px;
+}
+
 /* Clients Adjustment */
 
 .client-board {
