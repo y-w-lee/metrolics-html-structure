@@ -10,11 +10,6 @@ font-family: 'Ubuntu', sans-serif;
 /* margin-top: 1rem; */
 }
 
-nav.nav-bar {
-background-color: blueviolet;
-
-}
-
 .title-container {
 display: flex;
 align-items: center;
@@ -31,17 +26,47 @@ font-weight: 300;
 .nav-bar {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    gap: 1rem;
+    justify-content: center;
+    /* gap: 1rem; */
     font-family: 'Ubuntu', sans-serif; 
     font-weight: 300;
-    font-size: 1rem;
+    font-size: 0.7rem;
 }
 .nav-bar {
     a:link, a:visited, a:hover, a:active { 
         text-decoration: none; 
         color: white;
+        width: 5rem;
+        height: 5rem;
+
+        display: flex;
+        justify-content: first baseline;
+        align-items: flex-end;
+        padding: 0.5rem;
       } 
+}
+
+.nav-bar img {
+    width: 0.7rem;
+    height: 0.7rem;
+    position: relative;
+    padding-left: 2rem;
+}
+
+.nav-bar a:first-child {
+    background-color: rgb(40, 188, 126);
+}
+.nav-bar a:nth-child(2) {
+    background-color: rgb(246, 197, 50);
+}
+.nav-bar a:nth-child(3) {
+    background-color: rgb(215, 87, 87);
+}
+.nav-bar a:nth-child(4) {
+    background-color: rgb(37, 130, 164);
+}
+.nav-bar a:last-child {
+    background-color: rgb(13, 86, 146);
 }
 
 /*Main*/
