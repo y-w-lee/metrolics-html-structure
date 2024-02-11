@@ -74,6 +74,10 @@ font-family: 'Ubuntu', sans-serif;
 
 }
 
+.six-cards-small {
+    display: none;
+}
+
 /* Things of above adjustments */
 
 .banner-text img {
@@ -238,7 +242,22 @@ p {
 /* MEDIA QUERIES */
 
 /* Small only */
-@media screen and (max-width: 39.9375em) {}
+@media screen and (max-width: 39.9375em) {
+
+    .six-cards {
+        display: none;
+    }
+
+    .six-cards-small {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .six-cards-small img {
+        height: 200px;
+    }
+}
 
 /* Medium and up */
 @media screen and (min-width: 40em) {}
