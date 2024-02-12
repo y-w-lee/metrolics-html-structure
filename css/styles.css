@@ -59,7 +59,9 @@ font-family: 'Ubuntu', sans-serif;
 }
 /* h6, Used several times*/
 
-
+.table-tablet {
+    display: none;
+}
 
 /* Our Latest Projects Adjustments */
 
@@ -237,8 +239,6 @@ p {
 }
 
 
-
-
 /* MEDIA QUERIES */
 
 /* Small only */
@@ -252,18 +252,47 @@ p {
         display: flex;
         flex-direction: column;
         gap: 20px;
+        margin-bottom: 30px;
     }
 
     .six-cards-small img {
         height: 200px;
     }
+
+    .table-desktop {
+        display: none;
+    }
+
+    .banner-text {
+        display: none;
+    }
+
+    .client-board {
+        display: none;
+    }
 }
 
-/* Medium and up */
-@media screen and (min-width: 40em) {}
-
 /* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+    .table-desktop {
+        display: none;
+    }
+
+    .table-tablet {
+        display: block;
+    }
+
+    .table img {
+        width: 630px;
+    }
+
+    .six-cards {
+        display: grid;
+        grid-template-columns: repeat(2, 3fr);
+    }
+
+}
 
 /* Large and up */
 @media screen and (min-width: 64em) {}
