@@ -232,6 +232,12 @@ span {
     background-position: bottom;
 }
 
+.three-card-container {
+    display: flex;
+    justify-content: center;
+    width: 70%;
+}
+
 
 .six-cards {
     display: grid;
