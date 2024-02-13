@@ -192,6 +192,10 @@ p {
     width: 550px;
 }
 
+.line {
+    margin-top:-20px;
+}
+
 .sm-pics {
     height: 30px;
     align-items: center;
@@ -249,9 +253,28 @@ p {
     width: 550px;
 }
 
-.email {
-    background-color: red;
+.email-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
+.email {
+    display: flex;
+    background-color: rgba(221,99,98,255);
+    height: 30px;
+    width: 170px;
+    font-weight: lighter;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.airplane-mail {
+    width: 20px;
+    background-color: #ffb800;
+    padding: 5px;
+}
+
 
 /*Box decoration adjustments*/
 
@@ -262,6 +285,7 @@ p {
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
+
 }
 
 .green-box {
@@ -311,7 +335,8 @@ p {
         grid-template-columns: repeat(1, 2fr);
     }
     .about-us h2,
-    .about-us p {
+    .about-us p,
+    .about-us .line {
         display: none;
     }
 
