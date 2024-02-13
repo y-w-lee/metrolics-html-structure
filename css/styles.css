@@ -260,114 +260,313 @@ span {
 }
 
 
-.card-title {
-    margin-top: 1rem;
-    margin-bottom: 0%;
-}
+/* .card-title {
 
+}
 .card-text {
 
-} 
+} */
 
 .client-board {
     display: flex;
     justify-content: space-evenly;
 }
 
+/* FOOTER */
 
-/*Footer*/
+/* footer adjustments */
 .footer {
-    background-color: rgb(29, 29, 72);
+    background-color: #16242f;
     color: white;
-}
-
-.author-desc {
-
-}
-
-.hr {
-
+    padding-top: 3%;
+    padding-left: 18%;
+    padding-right: 18%;
 }
 
 .footer-items {
-display: flex;
-justify-content: space-evenly;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-family: 'Ubuntu', sans-serif;
 }
+
+h2 {
+    font-size: 14px;
+    margin-top: 0px;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+}
+
+p {
+    font-size: 12px;
+    font-weight: lighter;
+}
+
+/* Peewee Herman descripnm adjustments */
+
+.description {
+    display: flex;
+    flex-direction: row;
+}
+
+.description h2{
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+    white-space: nowrap; 
+    text-overflow: ellipsis;
+}
+
+.description p{
+    font-size: 12px;
+    font-weight: lighter;
+    font-style: italic;
+    margin-top: 0px;
+}
+
+.text-description {
+    margin-left: 15px;
+}
+
+.pfp {
+    height: 60px;
+}
+
+.small-p {
+    display: none;
+}
+
+.lines {
+    display: flex;
+    flex-direction: row;
+    height: 1px;
+}
+
+.line-blue {
+
+}
+
+/* Description Row Adjustments */
+
+.desc-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.desc-row p{
+    font-size: 10px;
+    justify-content: center;
+}
+
+/* About us adjustments*/
 
 .about-us {
-
+    width: 550px;
 }
+
+.line {
+    margin-top:-20px;
+}
+
+.sm-pics {
+    height: 30px;
+    align-items: center;
+}
+
+/* flickr photos adjustments */
 
 .flickr-photos {
-
+    width: 550px;
 }
+
+.minions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.minions {
+    height: 50px;
+    margin: 1px;
+}
+/* recent tweets adjustments */
 
 .recent-tweets {
-
+    width: 550px;
 }
+
+.twitter-logo {
+    height: 30px;
+}
+
+.tweet-1 {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.tweet-1 p {
+    margin-top: 0px;
+}
+
+.tweet-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+
+.tweet-2 p {
+    margin-top: 0px;
+}
+
+/* Newsletter adjustments */
 
 .newsletter {
+    width: 550px;
+}
+
+.email-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.email {
+    display: flex;
+    background-color: rgba(221,99,98,255);
+    height: 30px;
+    width: 170px;
+    font-weight: lighter;
+    align-items: center;
+    padding-left: 15px;
+}
+
+.airplane-mail {
+    width: 20px;
+    background-color: #ffb800;
+    padding: 5px;
+}
+
+
+/*Box decoration adjustments*/
+
+.boxes {
+    bottom: 0;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
 
 }
 
-/* MEDIA QUERIES */
+.green-box {
+    width: 75px;
+    height: 22px;
+    background-color: #26c389;
+}
+
+.yellow-box {
+    width: 75px;
+    height: 22px;
+    background-color: #ffb800;
+}
+
+.red-box {
+    width: 75px;
+    height: 22px;
+    background-color: #de6361;
+}
+
+.lightblue-box {
+    width: 75px;
+    height: 22px;
+    background-color: #1791bd;
+}
+
+.darkblue-box {
+    width: 75px;
+    height: 22px;
+    background-color: #166ba1;
+}
+/* MEDIA QUERIES FOOTER */
 
 /* Small only */
-@media screen and (max-width: 700px) {
-    .header {
-        padding-left: 4.5rem;
-        width: 40%; 
-        margin-right: 5rem;
-    }
+@media screen and (max-width: 39.9375em) {
 
-    .hamburger-menu img {
-        width: 2.5rem;
-        padding-left: 10rem;
-    }
-
-    nav.nav-bar {
+    .big-p {
         display: none;
     }
 
-    .carousel-container {
+    .small-p {
+        display: block;
+    }
+
+    .desc-row {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+    }
+    .about-us h2,
+    .about-us p,
+    .about-us .line {
         display: none;
     }
 
-    .four-cards-container .card-container {
-        display: grid;
-        grid-template-columns: repeat(1, 3fr);  
+    .sm-pics {
+        height: 50px;
+    }
+    .flickr-photos {
+        display: none;
     }
 
-    .whats-up-lately-section .card-container  {
-        display: grid;
-        grid-template-columns: repeat(1,6fr);
+    .recent-tweets {
+        width: 300px;
     }
 
-    .six-cards {
-        display: grid;
-        grid-template-columns: repeat(1,6fr);
+    .newsletter {
+        display: none;
+    }
+
+    .client-board {
+        display: none;
     }
 
 }
 
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
 
-/* Medium and up */
-@media screen and (min-width: 701px) and (max-width: 1120px) {
-    .four-cards-container .card-container{
+    .client-board img {
+        width: 90px;
+    }
+
+    .desc-row {
         display: grid;
         grid-template-columns: repeat(2, 2fr);
+        justify-content: space-evenly;
     }
 
-    .six-cards {
-        display: grid;
-        grid-template-columns: repeat(2,3fr);
+    .about-us {
+        width: 250px;
     }
 
-    .hamburger-menu img {
-        display: none;
+    .flickr-photos {
+        width: 250px;
+    }
+
+    .recent-tweets {
+        width: 250px;
+    }
+
+    .newsletter {
+        width: 250px;
     }
 }
 
+/* Large and up */
+@media screen and (min-width: 64em) {}
 
 /* Large only */
 @media screen and (min-width: 64em) {
