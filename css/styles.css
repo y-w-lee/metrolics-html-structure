@@ -104,14 +104,14 @@ align-items: center;
 .footer {
     background-color: #16242f;
     color: white;
-    padding: 10px;
-    padding: 3% 18%;
+    padding-top: 3%;
+    padding-left: 18%;
+    padding-right: 18%;
 }
 
 .footer-items {
     display: flex;
     justify-content: space-between;
-    gap: 25px;
     flex-direction: column;
     font-family: 'Ubuntu', sans-serif;
 }
