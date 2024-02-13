@@ -158,23 +158,40 @@ span {
     color: rgb(0, 195, 255);
 }
 
+/* 4 Cards Container */
+
+/* .things-that-we-do-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
 .four-cards-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 
     font-family: 'Ubuntu', sans-serif; 
     font-weight: 300;
     font-size: 1rem;
 }
+
+.card-container.card {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* margin-left: 1rem; */
+}
+
+
+
 .card .widget {
     width: 5rem;
     height: 5rem;
 }
 
-.four-cards-container .card {
-    width: 30%;
-}
 
 .banner-text {
     display: flex;
@@ -205,9 +222,10 @@ span {
 .card-container {
     display: flex;
     justify-content: space-around;
+    /* justify-content: center; */
     gap: 0.5rem;
-    align-items: center;
-    width: 60%;
+    width: 70%;
+    
 }
 
 .card-container img {
@@ -310,16 +328,50 @@ justify-content: space-evenly;
 /* MEDIA QUERIES */
 
 /* Small only */
-@media screen and (max-width: 39.9375em) {}
+@media screen and (max-width: 700px) {
+    nav.nav-bar {
+        display: none;
+    }
+    .header {
+       width: 40%; 
+        margin-right: 5rem;
+    }
+
+    .four-cards-container .card-container {
+        display: grid;
+        grid-template-columns: repeat(1, 3fr);
+
+       
+    }
+
+    .whats-up-lately-section .card-container  {
+        display: grid;
+        grid-template-columns: repeat(1,6fr);
+    }
+
+    .six-cards {
+        display: grid;
+        grid-template-columns: repeat(1,6fr);
+    }
+}
+
 
 /* Medium and up */
-@media screen and (min-width: 40em) {}
+@media screen and (min-width: 701px) and (max-width: 1120px) {
+    .four-cards-container .card-container{
+        display: grid;
+        /* justify-content: center;
+        align-content: center; */
+        grid-template-columns: repeat(2, 2fr);
 
-/* Medium only */
-@media screen and (min-width: 40em) and (max-width: 63.9375em) {}
+    }
 
-/* Large and up */
-@media screen and (min-width: 64em) {}
+    .six-cards {
+        display: grid;
+        grid-template-columns: repeat(2,3fr);
+    }
+}
+
 
 /* Large only */
 @media screen and (min-width: 64em) and (max-width: 74.9375em) {}
