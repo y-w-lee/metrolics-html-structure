@@ -87,6 +87,15 @@ font-family: 'Ubuntu', sans-serif;
     padding-bottom: 40px;
 }
 
+.banner-title {
+    padding-top: 50px;
+}
+
+.banner-text h6 {
+    font-weight: lighter;
+    margin-top: -10px;
+}
+
 /* Clients Adjustment */
 
 .client-board {
